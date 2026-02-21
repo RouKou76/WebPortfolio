@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="gleb's portfolio">
+    <title>gleb's portfolio</title>
+    
+    <!-- TODO: Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--  HEADER  -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">gleb</a>
+            <nav class="nav">
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#skills" class="nav-link">Навыки</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <div class="nav-overlay"></div>
+
+    <main>
+        <!--  HERO  -->
+        <section class="hero section">
+            <div class="container">
+                <span class="hero-badge">🚀 Открыт к предложениям</span>
+                <h1 class="hero-title">
+                    Hello world! я <span>Gleb</span><br>
+                    <!-- TODO: Сделать надпись в скобках менее заментной и под словами "начинающий разработчик" -->
+                    Студент, начинаюший разработчик
+                    <!--<span class="hero-subtitle">(хочу им стать)</span>-->
+                </h1>
+                <p class="hero-description">
+                    <!-- TODO: добавить сертификаты и ссылки на мероприятия -->
+                    Активно учавствую в акселерационных программах
+                    Принимал участие в хакатоне
+                    Проходил программы повышения предпренимательских спосбносте, в том числе от SkLab
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Связаться</a>
+                    <a href="#projects" class="btn btn-outline">Смотреть работы</a>
+                </div>
+<!--                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">?+</div>
+                        <div class="stat-label">Лет опыта</div> TODO
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">?+</div>
+                        <div class="stat-label">Проектов</div> TODO
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">?+</div>
+                        <div class="stat-label">Чего-нибудь</div> TODO
+                    </div>
+                </div>
+-->            
+            </div>
+        </section>
+
+        <!--  ABOUT  -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <!-- TODO: insert image -->
+                        <img src="assets/images/profile.jpg" alt="gleb">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title" style="text-align: left;">Обо мне</h2>
+                        <p>
+                            Меня зовут Глеб, я студент ИГХТУ, обучающийся на направлении "Информиционные системы и Технологии". Имею опыт создания 
+                            различных CLI программ. На данный момент занимаюсь проектированием Информационной системы учета
+                            на платформе <strong>1С: Предприятие 8.3</strong>.
+                        </p>
+                        <p>
+                            Также осваиваю 3-ех томник А. В. Столярова "Программирование: Введение в професию".
+                            Благодаря чему имею навыки работы с командной строкой, различными системали Unix и
+                            опыт востановления как загрузчиков, так и самих систем Windows и Unix)
+                        </p>
+                        <p>
+                            Для меня важны качество кода, соблюдение сроков и постоянное развитие. 
+                            Всегда открыт к интересным проектам и новым вызовам.
+                        </p>
+                        <a href="#contact" class="btn" style="margin-top: 24px;">Обсудить проект</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  SKILLS  -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Навыки и технологии</h2>
+                <p class="section-subtitle">
+                    Инструменты и технологии, которые я использую
+                </p>
+                <!-- TODO: добавить linux, terminal, cli etc -->
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-title">Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML5 / CSS3 / SCSS</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>React / Vue.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js / Python</li>
+                            <li>Express / FastAPI</li>
+                            <li>PostgreSQL / MongoDB</li>
+                            <li>REST API</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">Инструменты</h3>
+                        <ul class="skill-list">
+                            <li>Git / GitHub / GitLab</li>
+                            <li>Figma / Adobe XD</li>
+                            <li>Jira / Trello</li>
+                            <li>VS Code / WebStorm</li>
+                            <li>CI/CD Pipeline</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  PROJECTS  -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Проекты</h2>
+                <p class="section-subtitle">
+                    Этот список будет постоянно пополняться
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <h3 class="project-title">Проект #1</h3>
+                        <p class="project-description">
+                            TODO
+                            Описание проекта. Какие задачи решал, какой результат достигнут. 
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#https://github.com/RouKou76/TProgramming_2024" target="_blank">Код</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Проект #2</h3>
+                        <p class="project-description">
+                            TODO
+                            Описание проекта. Какие задачи решал, какой результат достигнут.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Код</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Проект #3</h3>
+                        <p class="project-description">
+                            TODO
+                            Описание проекта. Какие задачи решал, какой результат достигнут.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Код</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  CONTACT  -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Готовы начать? </h2>
+                    <!-- TODO: (заменить на что-то подходящее, лучше с юмором) -->
+                    <!-- <p class="section-subtitle">
+                        Обсудим ваш проект и найдём лучшее решение для ваших задач TODO: (тоже изменить)
+                    </p> -->
+                    <div class="contact-buttons">
+                        <a href="mailto:smirnovg2005@gmail.com" class="btn">Написать на Email</a>
+                        <a href="https://t.me/KK_RouKou" class="btn btn-outline">Telegram</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/RouKou76" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  FOOTER  -->
+        <footer class="footer">
+        <div class="container">
+            <p>Что еще сказать?</p>
+            <p>© 2026 Gleb. Все права защищены. ¯\_(ツ)_/¯</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
